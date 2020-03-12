@@ -1,0 +1,48 @@
+Temat: ,,System zarządzający hotelem z sekcją spa"
+
+Użytkownicy: 
+-administrator, 
+-pracownicy, 
+-klienci.
+
+Wstępny podział funkcjonalności:
+-administrator:
+	- zarządzanie pracownikami
+-pracownicy:
+	- sprawdzanie grafików
+	- zgłaszanie problemów technicznych
+-klienci:
+	- rejestracja (logowanie)
+	- rezerwacja pokoju
+	- płacenie za pobyt (zabiegi)
+	- rezerwacja terminów zabiegów.
+
+Back-end: Spring Boot
+Front-end: Vue.js
+Baza danych: MySQL
+
+Skład zespołu:
+Anna Huk
+Mateusz Hupa
+Piotr Kaczmarczyk
+
+Tematy projektów:
+Anna Huk:
+Inżynieria systemów informacyjnych- ,,Sanatorium"
+Podstawy Inżynierii Programowania- ,,Sanatorium"
+Praca inżynierska- ,,Projekt kalkulatora liczb rozmytych z wizualizacją"
+
+Mateusz Hupa:
+Inżynieria systemów informacyjnych- ,,Sanatorium"
+Podstawy Inżynierii Programowania- ,,Sanatorium"
+Praca inżynierska- brak
+
+Piotr Kaczmarczyk:
+Inżynieria systemów informacyjnych- ,,Sąd"
+Podstawy Inżynierii Programowania- ,,Sąd"
+Praca inżynierska- ,,Projekt kamizelki z ledami na Arduino"
+
+Wstępny podział pracy:
+- Mateusz Hupa - administrator
+- Anna Huk - pracownicy
+- Piotr Kaczmarczyk - klienci
