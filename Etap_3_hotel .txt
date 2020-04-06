@@ -1,0 +1,43 @@
+CREATE TABLE ROOM (
+	ID_ROOM int not null primary key identity(1,1),
+	FLOOR int,
+	NUMBER int
+);
+
+
+CREATE TABLE PERMISSION(
+	ID_PERMISSION int not null primary key identity(1,1),
+	NAME varchar(255)
+);
+
+
+CREATE TABLE USER(
+	ID_USER int not null primary key identity(1,1),
+	LOGIN varchar(255),
+	PASSWORD varchar(255),
+	NAME varchar(255),
+	SURNAME varchar(255),
+	NR_TEL int,
+	ADRESS_EMAIL varchar(255),
+	ID_PERMISSION int FOREIGN KEY REFERENCES `PERMISSION`(`ID_PERMISSION`)
+);
+
+
+CREATE TABLE SERVICES (
+	ID_SERVICE int not null primary key identity(1,1),
+	ID_CLIENT int FOREIGN KEY REFERENCES `USER`(`ID_USER`),
+	ID_WORKER int FOREIGN KEY REFERENCES `USER`(`ID_USER`),
+	NAME varchar(255),
+	DURATION time
+	
+);
+
+
+CREATE TABLE STAY (
+	ID_STAY int not null primary key identity(1,1),
+	ACTIVITY boolean,
+	START_DATE date,
+	END_DATE date,
+	ID_CIENT int FOREIGN KEY REFERENCES `USER`(`ID_USER`),
+	ID_ROOM int FOREIGN KEY REFERENCES `ROOM`(`ID_ROOM`)
+);
