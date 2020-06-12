@@ -1,10 +1,10 @@
 <template>
-
-  <user></user>
-
   <!--
+  <user></user>
   <admin></admin>
   -->
+  <committee></committee>
+
 </template>
 
 <script>

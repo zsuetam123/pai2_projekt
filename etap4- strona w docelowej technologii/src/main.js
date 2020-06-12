@@ -17,6 +17,8 @@ import Login from './components/admin/Login.vue';
 import Register from "./components/content/Register.vue";
 import Admin from "@/components/Admin.vue";
 import User from "@/components/User.vue";
+import Committee from "@/components/Committee.vue";
+import CommitteeMenu from "@/components/shared/CommitteeMenu.vue";
 
 Vue.component('vote', Vote);
 Vue.component('help', Help);
@@ -35,6 +37,8 @@ Vue.component('Login', Login);
 Vue.component('register', Register);
 Vue.component('user', User);
 Vue.component('admin', Admin);
+Vue.component('committee', Committee);
+Vue.component('committeeMenu', CommitteeMenu);
 
 new Vue({
   el: '#app',
