@@ -1,41 +1,63 @@
 <template>
-    <div>
-        <textarea id="text" rows="50" cols="100">
-            <b>Andrzej Duda</b><hr>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu ullamcorper purus. Vestibulum dictum erat mauris, quis gravida mauris cursus at. Quisque ante urna, posuere ut nunc quis, semper pharetra tellus. Nulla nec laoreet justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pellentesque massa tincidunt eleifend. Vestibulum tortor est, sagittis id dapibus ut, hendrerit at quam. Sed egestas magna id dolor convallis, vitae scelerisque diam hendrerit. Pellentesque faucibus placerat velit vitae facilisis. Integer ipsum odio, lacinia ac tortor vel, congue egestas turpis. Praesent finibus eros in ipsum hendrerit ultrices. Sed gravida neque sit amet elit porta fringilla. Aliquam euismod, mi cursus elementum fermentum, eros lorem tempor justo, sit amet feugiat nisi orci a augue. Mauris nec suscipit tellus, sit amet porta erat.
-            <b>Magłgorzata Kidawa-Błońska</b><hr>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu ullamcorper purus. Vestibulum dictum erat mauris, quis gravida mauris cursus at. Quisque ante urna, posuere ut nunc quis, semper pharetra tellus. Nulla nec laoreet justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pellentesque massa tincidunt eleifend. Vestibulum tortor est, sagittis id dapibus ut, hendrerit at quam. Sed egestas magna id dolor convallis, vitae scelerisque diam hendrerit. Pellentesque faucibus placerat velit vitae facilisis. Integer ipsum odio, lacinia ac tortor vel, congue egestas turpis. Praesent finibus eros in ipsum hendrerit ultrices. Sed gravida neque sit amet elit porta fringilla. Aliquam euismod, mi cursus elementum fermentum, eros lorem tempor justo, sit amet feugiat nisi orci a augue. Mauris nec suscipit tellus, sit amet porta erat.
-            <b>Szymon Hołownia</b><hr>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu ullamcorper purus. Vestibulum dictum erat mauris, quis gravida mauris cursus at. Quisque ante urna, posuere ut nunc quis, semper pharetra tellus. Nulla nec laoreet justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pellentesque massa tincidunt eleifend. Vestibulum tortor est, sagittis id dapibus ut, hendrerit at quam. Sed egestas magna id dolor convallis, vitae scelerisque diam hendrerit. Pellentesque faucibus placerat velit vitae facilisis. Integer ipsum odio, lacinia ac tortor vel, congue egestas turpis. Praesent finibus eros in ipsum hendrerit ultrices. Sed gravida neque sit amet elit porta fringilla. Aliquam euismod, mi cursus elementum fermentum, eros lorem tempor justo, sit amet feugiat nisi orci a augue. Mauris nec suscipit tellus, sit amet porta erat.
-            <b>Robert Biedroń</b><hr>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu ullamcorper purus. Vestibulum dictum erat mauris, quis gravida mauris cursus at. Quisque ante urna, posuere ut nunc quis, semper pharetra tellus. Nulla nec laoreet justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pellentesque massa tincidunt eleifend. Vestibulum tortor est, sagittis id dapibus ut, hendrerit at quam. Sed egestas magna id dolor convallis, vitae scelerisque diam hendrerit. Pellentesque faucibus placerat velit vitae facilisis. Integer ipsum odio, lacinia ac tortor vel, congue egestas turpis. Praesent finibus eros in ipsum hendrerit ultrices. Sed gravida neque sit amet elit porta fringilla. Aliquam euismod, mi cursus elementum fermentum, eros lorem tempor justo, sit amet feugiat nisi orci a augue. Mauris nec suscipit tellus, sit amet porta erat.
-            <b>Władysław Kosiniak-Kamysz</b><hr>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu ullamcorper purus. Vestibulum dictum erat mauris, quis gravida mauris cursus at. Quisque ante urna, posuere ut nunc quis, semper pharetra tellus. Nulla nec laoreet justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pellentesque massa tincidunt eleifend. Vestibulum tortor est, sagittis id dapibus ut, hendrerit at quam. Sed egestas magna id dolor convallis, vitae scelerisque diam hendrerit. Pellentesque faucibus placerat velit vitae facilisis. Integer ipsum odio, lacinia ac tortor vel, congue egestas turpis. Praesent finibus eros in ipsum hendrerit ultrices. Sed gravida neque sit amet elit porta fringilla. Aliquam euismod, mi cursus elementum fermentum, eros lorem tempor justo, sit amet feugiat nisi orci a augue. Mauris nec suscipit tellus, sit amet porta erat.
-            <b>Krzysztof Bosak</b><hr>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu ullamcorper purus. Vestibulum dictum erat mauris, quis gravida mauris cursus at. Quisque ante urna, posuere ut nunc quis, semper pharetra tellus. Nulla nec laoreet justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pellentesque massa tincidunt eleifend. Vestibulum tortor est, sagittis id dapibus ut, hendrerit at quam. Sed egestas magna id dolor convallis, vitae scelerisque diam hendrerit. Pellentesque faucibus placerat velit vitae facilisis. Integer ipsum odio, lacinia ac tortor vel, congue egestas turpis. Praesent finibus eros in ipsum hendrerit ultrices. Sed gravida neque sit amet elit porta fringilla. Aliquam euismod, mi cursus elementum fermentum, eros lorem tempor justo, sit amet feugiat nisi orci a augue. Mauris nec suscipit tellus, sit amet porta erat.
-            <b>Stanisława Żółtek</b><hr>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu ullamcorper purus. Vestibulum dictum erat mauris, quis gravida mauris cursus at. Quisque ante urna, posuere ut nunc quis, semper pharetra tellus. Nulla nec laoreet justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pellentesque massa tincidunt eleifend. Vestibulum tortor est, sagittis id dapibus ut, hendrerit at quam. Sed egestas magna id dolor convallis, vitae scelerisque diam hendrerit. Pellentesque faucibus placerat velit vitae facilisis. Integer ipsum odio, lacinia ac tortor vel, congue egestas turpis. Praesent finibus eros in ipsum hendrerit ultrices. Sed gravida neque sit amet elit porta fringilla. Aliquam euismod, mi cursus elementum fermentum, eros lorem tempor justo, sit amet feugiat nisi orci a augue. Mauris nec suscipit tellus, sit amet porta erat.
-            <b>Marek Jakubiak</b><hr>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu ullamcorper purus. Vestibulum dictum erat mauris, quis gravida mauris cursus at. Quisque ante urna, posuere ut nunc quis, semper pharetra tellus. Nulla nec laoreet justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pellentesque massa tincidunt eleifend. Vestibulum tortor est, sagittis id dapibus ut, hendrerit at quam. Sed egestas magna id dolor convallis, vitae scelerisque diam hendrerit. Pellentesque faucibus placerat velit vitae facilisis. Integer ipsum odio, lacinia ac tortor vel, congue egestas turpis. Praesent finibus eros in ipsum hendrerit ultrices. Sed gravida neque sit amet elit porta fringilla. Aliquam euismod, mi cursus elementum fermentum, eros lorem tempor justo, sit amet feugiat nisi orci a augue. Mauris nec suscipit tellus, sit amet porta erat.
-            <b>Mirosław Piotrowski</b><hr>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu ullamcorper purus. Vestibulum dictum erat mauris, quis gravida mauris cursus at. Quisque ante urna, posuere ut nunc quis, semper pharetra tellus. Nulla nec laoreet justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pellentesque massa tincidunt eleifend. Vestibulum tortor est, sagittis id dapibus ut, hendrerit at quam. Sed egestas magna id dolor convallis, vitae scelerisque diam hendrerit. Pellentesque faucibus placerat velit vitae facilisis. Integer ipsum odio, lacinia ac tortor vel, congue egestas turpis. Praesent finibus eros in ipsum hendrerit ultrices. Sed gravida neque sit amet elit porta fringilla. Aliquam euismod, mi cursus elementum fermentum, eros lorem tempor justo, sit amet feugiat nisi orci a augue. Mauris nec suscipit tellus, sit amet porta erat.
-            <b>Paweł Tanajno</b><hr>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu ullamcorper purus. Vestibulum dictum erat mauris, quis gravida mauris cursus at. Quisque ante urna, posuere ut nunc quis, semper pharetra tellus. Nulla nec laoreet justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat pellentesque massa tincidunt eleifend. Vestibulum tortor est, sagittis id dapibus ut, hendrerit at quam. Sed egestas magna id dolor convallis, vitae scelerisque diam hendrerit. Pellentesque faucibus placerat velit vitae facilisis. Integer ipsum odio, lacinia ac tortor vel, congue egestas turpis. Praesent finibus eros in ipsum hendrerit ultrices. Sed gravida neque sit amet elit porta fringilla. Aliquam euismod, mi cursus elementum fermentum, eros lorem tempor justo, sit amet feugiat nisi orci a augue. Mauris nec suscipit tellus, sit amet porta erat.
-        </textarea>
+    <div id="temp">
+        <ul v-for="(candidate, index) in candidates" :key="index">
+            <li>
+                <b>{{candidate.name}}       </b>
+                <button @click="setVal(index)">X</button>
+            </li>
+            <li>
+                {{candidate.progrmae}}
+            </li>
+        </ul>
         <hr>
-        <button>Zapisz zmiany</button>
+        <div>
+            <label>Podaj nowy program dla <b>{{currentCandidate}}</b></label><br>
+            <input id="text" type="text" v-model="newProgram"><br><br>
+            <button @click="changeVal">Dodaj</button>
+        </div>
+        <br>
+
     </div>
 </template>
 
 <script>
-
+    export default{
+        data: function(){
+            return{
+                candidates: [
+                    {name: 'Andrzej Duda', progrmae:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+                    {name: 'Magłgorzata Kidawa-Błońska', progrmae:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+                    {name: 'Szymon Hołownia', progrmae:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+                    {name: 'Robert Biedroń', progrmae:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+                    {name: 'Władysław Kosiniak-Kamysz', progrmae:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+                    {name: 'Krzysztof Bosak', progrmae:'bosakLorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+                    {name: 'Stanisława Żółtek', progrmae:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+                    {name: 'Marek Jakubiak', progrmae:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+                    {name: 'Mirosław Piotrowski', progrmae:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+                    {name: 'Paweł Tanajno', progrmae:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'},
+                ],
+                newProgram: '',
+                currentCandidate: '',
+                index: 0,
+            }
+        },
+        methods:{
+            setVal(index){
+                this.index = index;
+                this.currentCandidate = this.candidates[index].name;
+                this.newProgram = this.candidates[index].progrmae;
+            },
+            changeVal(){
+                this.candidates[this.index].progrmae = this.newProgram;
+            },
+        }
+    }
 </script>
 
 <style scoped>
-    #text{
-        margin: 10px;
-        box-shadow: inset 1px 2px 10px 0 black;
-        padding: 2px;
+    #temp{
+        width:70%;
+        margin: 30px auto;
     }
     button{
         margin: auto;
@@ -55,5 +77,25 @@
     button:active{
         position: relative;
         top: 2px;
+    }
+    input[type=text]{
+        margin:10px 0;
+        transition: width 0.4s ease-in-out, height 0.4s ease-in-out, background 0.4s ease-in-out;
+        width: 35%;
+        text-align: left;
+        height: 30px;
+        font-size:18px;
+        background: #fff;
+        border: 1px solid black;
+        border-radius: 2px;
+        padding: 1px 5px;
+    }
+    input[type=text]:focus{
+        transition: width 0.4s ease-in-out, background 0.4s ease-in-out;
+        background: #75afff;
+        width: 70%;
+    }
+    ul, li{
+        list-style-type: none;
     }
 </style>

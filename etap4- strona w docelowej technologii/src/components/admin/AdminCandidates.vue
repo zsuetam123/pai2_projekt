@@ -1,33 +1,59 @@
 <template>
-    <div>
-        <textarea id="text" rows="15" cols="34">
-            <ul>
-                <li>Andrzej Duda</li>
-                <li>Magłgorzata Kidawa-Błońska</li>
-                <li>Szymon Hołownia</li>
-                <li>Robert Biedroń</li>
-                <li>Władysław Kosiniak-Kamysz</li>
-                <li>Krzysztof Bosak</li>
-                <li>Stanisława Żółtek</li>
-                <li>Marek Jakubiak</li>
-                <li>Mirosław Piotrowski</li>
-                <li>Paweł Tanajno</li>
-            </ul>
-        </textarea>
-        <hr>
-        <button>Zapisz zmiany</button>
+    <div id="temp">
+        <table v-for="(candidate, index) in candidates" :key="index">
+            <tr>
+                <td>
+                    {{candidate}}
+                </td>
+                <td>
+                    <button @click="del(index)">X</button>
+                </td>
+            </tr>
+        </table>
+
+            <hr>
+            <br>
+        <label>Podaj nazwisko nowego kandydata </label><br><br>
+            <input id="name" type="text" v-model="newCandidate"><br><br>
+        <button @click="addCandidate">Dodaj</button>
     </div>
 </template>
 
 <script>
-
+export default{
+    data: function(){
+        return{
+            candidates: [
+                'Andrzej Duda',
+                'Magłgorzata Kidawa-Błońska',
+                'Szymon Hołownia',
+                'Robert Biedroń',
+                'Władysław Kosiniak-Kamysz',
+                'Krzysztof Bosak',
+                'Stanisława Żółtek',
+                'Marek Jakubiak',
+                'Mirosław Piotrowski',
+                'Paweł Tanajno'
+            ],
+            newCandidate: '',
+        }
+    },
+    methods:{
+        del(index){
+            this.candidates.splice(index, 1);
+        },
+        addCandidate() {
+            this.candidates.push(this.newCandidate);
+            this.newCandidate = '';
+        }
+    }
+}
 </script>
 
 <style scoped>
-    #text{
-        margin: 10px;
-        box-shadow: inset 1px 2px 10px 0 black;
-        padding: 2px;
+    #temp{
+        width:70%;
+        margin: 30px auto;
     }
     button{
         margin: auto;
@@ -47,5 +73,23 @@
     button:active{
         position: relative;
         top: 2px;
+    }
+    input[type=text]{
+        transition: width 0.4s ease-in-out, height 0.4s ease-in-out, background 0.4s ease-in-out;
+        width: 15%;
+        text-align: left;
+        height: 30px;
+        font-size:20px;
+        background: #fff;
+        border: 1px solid black;
+        border-radius: 2px;
+        padding: 1px 5px;
+    }
+    input[type=text]:focus{
+        transition: width 0.4s ease-in-out, height 0.4s ease-in-out, background 0.4s ease-in-out;
+        background: #75afff;
+        height: 30px;
+        width: 18%;
+        color: #fff;
     }
 </style>

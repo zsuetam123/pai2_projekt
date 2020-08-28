@@ -1,14 +1,17 @@
 <template>
-  <!--
-  <user></user>
-  <admin></admin>
-  -->
-  <committee></committee>
-
+  <div id="app">
+    <!--<app-menu></app-menu>-->
+    <admin-header></admin-header>
+    <committee-menu></committee-menu>
+    <router-view></router-view>
+    <app-footer></app-footer>
+  </div>
 </template>
 
 <script>
-
+  export default {
+    el: '#app',
+  }
 </script>
 
 <style>
@@ -23,10 +26,6 @@ body{
   #app{
     margin: 0;
     padding: 0;
-  }
-  #margin{
-   float:left;
-    margin-left: 13%
   }
   div{
     margin: 0;

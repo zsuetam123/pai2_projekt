@@ -3,28 +3,21 @@
         <header>
         <h1>System zdanlego głosowania na prezydenta RP</h1>
         <ul>
-            <li @click="changeMenu(1)">Strona główna</li>
-            <li @click="changeMenu(2)">Kandydaci</li>
-            <li @click="changeMenu(3)">Program wyborczy</li>
-            <li @click="changeMenu(4)">Pomoc</li>
-            <li id="vote" @click="changeMenu(6)">Głosowanie</li>
-            <li id="reg" @click="changeMenu(5)">Resjestracja</li>
+            <router-link tag="li" to="/">Strona główna</router-link>
+            <router-link tag="li" to="/candidates">Kandydaci</router-link>
+            <router-link tag="li" to="/election-program">Program wyborczy</router-link>
+            <router-link tag="li" to="/help">Pomoc</router-link>
+            <router-link tag="li" to="/vote" id="vote">Głosowanie</router-link>
+            <router-link tag="li" to="/register" id="reg">Resjestracja</router-link>
         </ul>
         <div style="clear:both;"></div>
-    </header>
-    <div style="height: 120px;"></div>
+        </header>
+        <div style="height: 120px;"></div>
     </div>
 </template>
 
 <script>
-    export default{
-        methods:{
-          changeMenu(id) {
-              this.$emit('menuValue', id);
-          }
-        }
 
-    }
 </script>
 
 

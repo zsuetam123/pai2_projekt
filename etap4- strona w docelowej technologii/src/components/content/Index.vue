@@ -29,7 +29,7 @@
             <div style="clear: both; height: 50px"></div>
         </div>
         <div id="getVote">
-            <div id="vote" class="mybutton" @click="changeMenu()" >Głosowanie</div>
+            <router-link tag="div" to="/vote" id="vote" class="mybutton">Głosowanie</router-link>
         </div>
     </div>
 </template>
@@ -45,12 +45,6 @@
                 image: image,
                 image2: image2,
             }
-        },
-        methods:{
-          changeMenu() {
-              let val = 5;
-              this.$emit('menuValue', val);
-          }
         },
     }
 </script>

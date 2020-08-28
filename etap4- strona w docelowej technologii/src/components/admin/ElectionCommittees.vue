@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="temp">
         <table>
             <tr><td>Komitet Andrzeja Dudy</td><td><button @click="openModal"><i class="fas fa-key"></i></button></td></tr>
             <tr><td>Komitet Magłgorzaty Kidawy-Błońskiej </td><td><button @click="openModal"><i class="fas fa-key"></i></button></td></tr>
@@ -52,6 +52,10 @@
 <style scoped>
     div{
         margin: 10px;
+    }
+    #temp{
+        width:70%;
+        margin: 30px auto;
     }
     #modal{
         display: none;

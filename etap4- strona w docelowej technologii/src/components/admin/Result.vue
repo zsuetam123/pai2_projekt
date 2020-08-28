@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="temp">
         <ul>
             <li>Andrzej Duda - 30%</li>
             <li>Magłgorzata Kidawa-Błońska - 5%</li>
@@ -22,6 +22,10 @@
 </script>
 
 <style scoped>
+    #temp{
+        width:70%;
+        margin: 30px auto;
+    }
     button{
         margin: auto;
         padding:7px;

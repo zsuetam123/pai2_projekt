@@ -6,7 +6,7 @@
             <br><br>
             <label>Hasło</label><br>
             <input type="password" placeholder="Hasło" name="password" required>
-            <p>Nie masz konta? Zarejestruj się!</p>
+            <router-link tag="p" to="register">Nie masz konta? Zarejestruj się!</router-link>
             <hr>
             <button type="submit" @click="vote=!vote">Login</button>
         </div>
@@ -31,7 +31,7 @@
             <h1>Zagłosowano na {{candidates[id-1]}}</h1><br>
             <h1>Naród Polski Dziękuje!</h1>
             <hr>
-            <button type="submit" @click="close">Powrót na strone główną</button>
+            <router-link tag="button" type="submit" to="/" >Powrót na strone główną</router-link>
         </div>
     </div>
 
@@ -52,10 +52,6 @@
             }
         },
         methods:{
-          close() {
-              this.end = true;
-              this.$emit('menuValue', 1);
-          },
           data(){
               let txt;
               if (confirm("Czy zgadasz się na przetwarzanie twoich danych?")) {
@@ -177,5 +173,9 @@
     p{
         font-size: 15px;
         margin-top: 35px;
+        cursor: pointer;
+    }
+    p:hover{
+        color: #75afff;
     }
 </style>

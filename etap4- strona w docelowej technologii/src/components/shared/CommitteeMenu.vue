@@ -1,22 +1,15 @@
 <template>
     <div id="menu">
         <ul>
-            <li class="free" @click="changeMenu(1)">Wyniki</li>
-            <li class="free" @click="changeMenu(2)">Kandydaci</li>
-            <li class="free" @click="changeMenu(3)">Program wyborczy</li>
+            <router-link tag="li" to="/result" class="free">Wyniki</router-link>
+            <router-link tag="li" to="/admin-candidates" class="free">Kandydaci</router-link>
+            <router-link tag="li" to="/admin-election-programme" class="free">Program wyborczy</router-link>
         </ul>
     </div>
 </template>
 
 <script>
-    export default{
-        methods:{
-            changeMenu(id) {
-                this.$emit('menuValue', id);
-            }
-        }
 
-    }
 </script>
 
 <style scoped>
