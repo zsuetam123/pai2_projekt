@@ -16,7 +16,7 @@
         <input type="submit" value="Zaloguj">
       </p>
     </form>
-
+  <br>
     <form @submit.prevent>
       <p>
         <label>Jeśli nie masz konta, zarejestruj się.</label>
@@ -104,5 +104,13 @@
   }
   a {
     color: #42b983;
+  }
+  .log{
+    background: #efefef;
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px #6d6d6d;
   }
 </style>

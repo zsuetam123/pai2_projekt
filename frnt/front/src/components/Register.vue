@@ -120,4 +120,12 @@
     a {
         color: #42b983;
     }
+    .Regis{
+        background: #efefef;
+        width: 20%;
+        margin: auto;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 1px #6d6d6d;
+    }
 </style>
