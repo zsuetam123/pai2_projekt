@@ -69,6 +69,7 @@ public class LoginController {
         {
             electionstaffInfo[0] = user.getId().toString();
             electionstaffInfo[1] = electionStaffMembers.getElectionStaff().getId().toString();
+            electionstaffInfo[2] = electionStaffMembers.getElectionStaff().getCandidates().getId().toString();
             electionstaffInfo[3] = "Ok";
             electionstaffInfo[7] = user.getPermission().toString();
             return electionstaffInfo;
