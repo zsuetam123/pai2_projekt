@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
 
         <ul>
             <li @click="swapLocalView(1)">Strona główna</li>
@@ -106,11 +106,24 @@
     }
     ul {
         list-style-type: none;
-        padding: 0;
+        background: #f7f7f7;
+        padding: 2px;
+        width: 60%;
+        margin: 0 auto 5px auto;
+        border-radius: 5px;
     }
     li {
         display: inline-block;
         margin: 0 10px;
+
+        padding: 5px;
+    }
+    li:hover {
+        cursor: pointer;
+        background: #737373;
+        color: #f7f7f7;
+        border-radius: 5px;
+        transition: background .2s ease-in-out, color .2s ease-in-out;
     }
     a {
         color: #42b983;
