@@ -16,7 +16,7 @@ import java.util.List;
 public class ElectionStaffMembersController {
     @Autowired
     private ElectionStaffMembersRepo electionStaffMembersRepo;
-
+/*
     @RequestMapping("/getElectionStaffMembers")
     public List<ElectionStaffMembers> getElectionStaffMembers() {
         return electionStaffMembersRepo.findAll();
@@ -27,4 +27,8 @@ public class ElectionStaffMembersController {
         electionStaffMembersRepo.save(electionStaffMembers);
         return electionStaffMembers.toString();
     }
+ */
+
+
+
 }

@@ -10,6 +10,7 @@ import java.util.List;
 public interface ElectionProgramRepo extends JpaRepository<ElectionProgram, Integer> {
 
     ElectionProgram findElectionProgramByElectionStaffId(Integer id);
+    ElectionProgram findElectionProgramById(Integer id);
    // List<ElectionProgram> findElectionProgramById(int id);
    // ElectionProgram findElectionProgramByelectionStaff(ElectionStaff electionStaff);
 

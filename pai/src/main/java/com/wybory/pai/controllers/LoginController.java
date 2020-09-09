@@ -31,6 +31,9 @@ public class LoginController {
     @Autowired
     ElectionStaffRepo staffRepo;
 
+    @Autowired
+    ElectionStaffMembersRepo electionStaffMembersRepo;
+
     @CrossOrigin(origins = "http://localhost:8081")
     @RequestMapping("login")
     ResponseEntity<String []> loginOdp(@RequestParam ("email") String email,
@@ -45,12 +48,34 @@ public class LoginController {
                     return new ResponseEntity<>(userLog(user, haslo), HttpStatus.OK);
                 case "admin":
                     return new ResponseEntity<>(adminLog(user, haslo), HttpStatus.OK);
+                case "electionstaff":
+                    return new ResponseEntity<>(electionstaffLog(user, haslo), HttpStatus.OK);
                 default:
                     return new ResponseEntity<>(userLog(user, haslo), HttpStatus.OK);
             }
 
         } else {
             return new ResponseEntity<>(userLog(user, haslo), HttpStatus.OK);
+        }
+    }
+
+    String[] electionstaffLog(User user, String haslo){
+
+        String[] electionstaffInfo = new String[8];
+
+        ElectionStaffMembers electionStaffMembers = electionStaffMembersRepo.findElectionStaffMembersByNameAndSurname(user.getName(), user.getSurname());
+
+        if (haslo.equals(user.getPassword()))
+        {
+            electionstaffInfo[0] = user.getId().toString();
+            electionstaffInfo[1] = electionStaffMembers.getElectionStaff().getId().toString();
+            electionstaffInfo[3] = "Ok";
+            electionstaffInfo[7] = user.getPermission().toString();
+            return electionstaffInfo;
+        }else{
+            electionstaffInfo[3] = "Złe haslo";
+            electionstaffInfo[7] = user.getPermission().toString();
+            return electionstaffInfo;
         }
     }
 
