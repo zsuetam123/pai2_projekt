@@ -49,7 +49,9 @@ export default {
 </script>
 
 <style>
-
+  ul, li {
+    list-style-type: none;
+  }
   #app {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
